@@ -3,7 +3,8 @@ import Axios from "axios";
 import { Link } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 import "./OmegaClubs.css";
-
+import Header from "../main components/Header";
+import Footer from "../footer";
 function Members() {
   const [memberList, setMemberList] = useState([]);
 
@@ -18,6 +19,7 @@ function Members() {
 
   return (
     <>
+    
       <div className="omegaContainer"></div>
       <Row>
         {memberList.map((listItem) => {
@@ -43,6 +45,7 @@ function Members() {
           );
         })}
       </Row>
+ 
     </>
   );
 }

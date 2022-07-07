@@ -1,9 +1,12 @@
 import { Container } from "react-bootstrap";
 import image from "../../images/services.png";
 import "./Services.css";
+import Header from "../main components/Header";
+import Footer from "../footer";
 function Services() {
   return (
     <>
+    <Header></Header>
       <Container className="mainContainer">
         <img
           src={image}
@@ -42,6 +45,7 @@ function Services() {
           </a>
         </div>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

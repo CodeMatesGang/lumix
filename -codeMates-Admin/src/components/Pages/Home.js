@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import leadership from "../../images/leaders.jpg";
 import services from "../../images/services.jpg";
 import membership from "../../images/member.png";
-
+import Footer from "../footer";
+import Header from "../main components/Header";
 import "./Home.css";
 function Home() {
   return (
     <>
+    <Header></Header>
       <Container>
         <Card className="card  border-0">
           <Card.Img variant="top" src={services} className="cardImg" />
@@ -63,6 +65,7 @@ function Home() {
           </Card.Body>
         </Card>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

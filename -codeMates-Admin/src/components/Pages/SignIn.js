@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import Header from "../main components/Header";
+import Footer from "../footer";
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -24,6 +25,7 @@ const SignIn = () => {
   };
   return (
     <section className="hero has-background-grey-light is-fullheight is-fullwidth">
+<Header></Header>
       <div className="hero-body">
         <div className="container">
           <div className="columns is-centered">
@@ -64,6 +66,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

@@ -2,10 +2,12 @@ import { Container } from "react-bootstrap";
 import image from "../../images/leo.jpg";
 import "./LeoClub.css";
 import LeoClubs from "./LeoClubs";
-
+import Header from "../main components/Header";
+import Footer from "../footer";
 function LeoClub() {
   return (
     <>
+    <Header></Header>
       <Container className="mainContainer">
         <img
           src={image}
@@ -38,7 +40,9 @@ function LeoClub() {
           {/* <OmegaClubs /> */}
         </div>
       </Container>
+      <Footer></Footer>
     </>
+    
   );
 }
 export default LeoClub;

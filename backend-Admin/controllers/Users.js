@@ -16,6 +16,7 @@ export const getUsers = async(req, res) => {
 export const Register = async(req, res) => {
     const { name, email, password, confPassword } = req.body;
     if(password != confPassword) return res.status(400).json({msg: "Password and Confirm Password do not match"});
+    var passw=  /^[A-Za-z]\w{7,14}$/;
 
     if(name.length >= 15) return res.status(400).json({msg: "User name can't be more than 15 characters"});
     if(name.length == 0) return res.status(400).json({msg: "User name empty"});

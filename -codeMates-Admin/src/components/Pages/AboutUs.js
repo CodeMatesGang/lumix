@@ -1,10 +1,13 @@
 import { Container } from "react-bootstrap";
 import image from "../../images/bgimg.jpg";
 import ContactForm from "../main components/ContactForm";
+import Header from "../main components/Header";
+import Footer from "../footer";
 import "./AboutUs.css";
 function AboutUs() {
   return (
     <>
+  <Header></Header>
       <Container className="mainContainer">
         <img
           src={image}
@@ -32,6 +35,7 @@ function AboutUs() {
         </div>
         <ContactForm />
       </Container>
+<Footer></Footer>
     </>
   );
 }

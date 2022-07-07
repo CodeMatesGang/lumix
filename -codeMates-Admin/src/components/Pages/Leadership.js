@@ -1,9 +1,12 @@
 import { Container } from "react-bootstrap";
 import image from "../../images/leader.jpg";
 import "./Leadership.css";
+import Header from "../main components/Header";
+import Footer from "../footer";
 function Leadership() {
   return (
     <>
+    <Header></Header>
       <Container className="mainContainer">
         <img
           src={image}
@@ -41,6 +44,7 @@ function Leadership() {
           </a>
         </div>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

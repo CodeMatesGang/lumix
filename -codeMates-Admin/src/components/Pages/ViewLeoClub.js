@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import Axios from "axios";
 import { Container } from "react-bootstrap";
 import leoLogo from "../../images/leoLogo.png";
-
+import Header from "../main components/Header";
+import Footer from "../footer";
 function ViewLeoClub() {
   const [title, setTitle] = useState("");
   // const [file, setFile] = useState("");
@@ -24,6 +25,7 @@ function ViewLeoClub() {
 
   return (
     <>
+    <Header></Header>
       <Container>
         {/* {console.log(club)} */}
         <img
@@ -39,6 +41,7 @@ function ViewLeoClub() {
           <p>{description}</p>
         </div>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

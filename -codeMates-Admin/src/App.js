@@ -43,8 +43,6 @@ function App() {
   }, []);
   return (
     <div className="App">
-      
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -69,16 +67,18 @@ function App() {
         <Route path="/updateclub/:ID" element={<OmegaClub />} />
         <Route path="/viewleoclub/:ID" element={<ViewLeoClub />} />
         <Route path="/clublist" element={<ClubList />} />
-        <Route path="/add" element={<AddClub />} />
-        <Route path="/edit/:id" element={<EditClub />} />
+        
+        
         <Route path="/clubs/:id" element={<ViewLeoClub />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<Admin />} /> 
         <Route path="/adm" element={<AddM />} />
         <Route path="/editm/:id" element={<EditMember />} />
+        <Route path="/add" element={<AddClub />} />
+        <Route path="/edit/:id" element={<EditClub />} />
+       
         <Route path="/memberlist" element={<MemberList />} />
       </Routes>
-      <Footer />
-      
+
     </div>
   );
 }

@@ -34,9 +34,11 @@ import ClubList from "../Pages/ClubList";
 import RepliesOfContactUs from "./RepliesOfContactUs";
 import "./Admin.css";
 import MemberList from "../Pages/MemberList";
+import AdminNavbar from "./AdminNavbar";
 function Admin() {
   return (
     <>
+    <AdminNavbar />
       <Container className="adminContainer">
         <h1 className="text-center mt-5">Admin panel</h1>
         <hr />

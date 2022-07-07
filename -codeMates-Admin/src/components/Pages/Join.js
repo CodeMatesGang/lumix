@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import Header from "../main components/Header";
+import Footer from "../footer";
 const Join = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -30,7 +32,8 @@ const Join = () => {
   };
 
   return (
-    <section className="hero has-background-grey-light is-fullheight is-fullwidth">
+    
+    <section className="hero has-background-grey-light is-fullheight is-fullwidth"><Header></Header>
       <div className="hero-body">
         <div className="container">
           <div className="columns is-centered">
@@ -100,6 +103,7 @@ const Join = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };
